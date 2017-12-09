@@ -1,3 +1,5 @@
+import sbt._
+
 object Version {
   final val Scala: String = "2.12.4"
   final val logbackVersion: String = "0.9.16"
