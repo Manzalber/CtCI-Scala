@@ -3,7 +3,7 @@ import sbt._
 object Version {
   final val Scala: String = "2.12.4"
   final val logbackVersion: String = "0.9.16"
-  final val scalaTest : String = "3.0.1"
+  final val scalaTest: String = "3.0.4"
 }
 
 object Library {
@@ -13,6 +13,8 @@ object Library {
   }
 
   object Test {
-    val scalaTest : ModuleID = "org.scalatest" %% "scalatest" % Version.scalaTest % "test"
+    val scalactic: ModuleID = "org.scalactic" %% "scalactic" % Version.scalaTest
+    val scalaTest
+      : ModuleID = "org.scalatest" %% "scalatest" % Version.scalaTest % "test"
   }
 }
